@@ -113,11 +113,11 @@ function Cars(props) {
                 {error ? <h3 className="error">{error}</h3> : null}
                 <div className="entry-form-input">
                   <label htmlFor="Car_Make">Car Make</label>
-                  <input name="Car_Make" required={true} ref={register({ pattern: /^[A-Za-z0-9]+$/i },{ min: 5, max: 10 })} />
+                  <input name="Car_Make" required={true} ref={register({ pattern: /^[a-zA-Z]/ },{max: 10 })} />
                 </div>
                 <div className="entry-form-input">
                   <label htmlFor="Car_Model">Car Model</label>
-                  <input name="Car_Model" required={true} ref={register({ pattern: /^[A-Za-z0-9]+$/i },{ min: 5, max: 10 })} />
+                  <input name="Car_Model" required={true} ref={register({ pattern: /^[A-Za-z0-9]/ })} />
                 </div>
                 <div className="entry-form-input">
                   <button

@@ -114,18 +114,18 @@ function Products(props) {
                 {error ? <h3 className="error">{error}</h3> : null}
                 <div className="entry-form-input">
                   <label htmlFor="Product_Name">Product Name</label>
-                  <input name="Product_Name" required={true} ref={register} />
+                  <input name="Product_Name" required={true} ref={register({ pattern: /^[A-Za-z0-9]/ }) }/>
                 </div>
                 <div className="entry-form-input">
                   <label htmlFor="Rate">Rate</label>
-                  <input name="Rate" required={true} ref={register} />
+                  <input name="Rate" required={true} ref={register({ pattern: /^[0-9]/ }) } />
                 </div>
                 <div className="entry-form-input">
                   <label htmlFor="Car_ID">Car ID</label>
                   <input
                     name="Car_ID"
                     required={true}
-                    ref={register}
+                    ref={register({ pattern: /^[0-9]/ }) }
                   />
                 </div>
                 <div className="entry-form-input">

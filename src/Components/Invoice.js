@@ -205,19 +205,19 @@ function Invoices(props) {
                 {error ? <h3 className="error">{error}</h3> : null}
                 <div className="entry-form-input">
                   <label htmlFor="Customer_ID">Customer ID</label>
-                  <input name="Customer_ID" required={true} ref={register({ pattern: /^[0-9]+$/i })} />
+                  <input name="Customer_ID" required={true} ref={register({ pattern: /^[0-9]/ })} />
                 </div>
                 <div className="entry-form-input">
                   <label htmlFor="Product_ID">Product ID</label>
-                  <input name="Product_ID" required={true} ref={register({ pattern: /^[0-9]+$/i })} />
+                  <input name="Product_ID" required={true} ref={register({ pattern: /^[0-9]/ })} />
                 </div>
                 <div className="entry-form-input">
                   <label htmlFor="Car_ID">Car ID</label>
-                  <input name="Car_ID" required={true} ref={register({ pattern: /^[0-9]+$/i })} />
+                  <input name="Car_ID" required={true} ref={register({ pattern: /^[0-9]/ })} />
                 </div>
                 <div className="entry-form-input">
                   <label htmlFor="Qty">Quantity</label>
-                  <input name="Qty" required={true} ref={register({ pattern: /^[0-9]+$/i })} />
+                  <input name="Qty" required={true} ref={register({ pattern: /^[0-9]/ })} />
                 </div>
                 <div className="entry-form-input">
                   <button
