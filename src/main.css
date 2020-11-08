@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+    border-right: 1px solid black;
+    height: 100vh;
+    padding:1rem 0;
+    align-items: center;
+    justify-items: center;
+    background-color: #1874CD;
+    /* position: fixed; */
+}
+
+li{
+    list-style-type: none;
+}
+
+.side-bar-button a:link, a:visited, a:active {
+    text-decoration: none;
+    color: rgb(219, 218, 218);
+    vertical-align: baseline;
+    margin: auto;
+    margin-left: 1rem;
+    font-weight: bold;
+ 
+}
+
+.side-bar-button a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.side-bar-button {
+    display: flex;
+    height: 2rem;
+    width: 10rem;
+    text-align: left;
+    color: black;
+    cursor: pointer;
+
+    
+}
+
+.side-bar-button:hover {
+    background-color: #60AFFE; 
+    color: white;
+    cursor: pointer;
+}
+
+.second-container {
+    width: 100vw;
+    height: 100vh;
+    flex: 0.9;
+    overflow-y: scroll !important;
+    min-width: fit-content;
+
+}
+
+.second-container::-webkit-scrollbar {
+    display: none;
+}
+
+.second-container{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.entry-form-container {
+    background-color: #60AFFE;
+    padding: 0.6rem;
+    margin: 1rem;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.entry-form label,
+.entry-form input,
+.entry-form textarea,
+.entry-form button {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 100%;
+  text-align: right;
+  justify-content: center;
+}
+.entry-form input,
+.entry-form textarea {
+    text-align: left;
+    padding-left: 2px;
+}
+
+.entry-form button {
+    text-align: center;
+}
+
+/** Components */
+.card {
+    max-width: 18rem;
+}
+
+/**  Customer */
+
+.Customer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.heading-bar {
+    width: 100vw;
+    text-align: center;
+    background-color: #60AFFE;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding: 0.2rem;
+}
+
+.card-tabel-view {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.3rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.btn {
+    float: right;
+}
+
+.table-view {
+    /* display: none !important; */
+    margin: 1rem
+}
+
+
+.entry-form-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.entry-form-input  label {
+    margin-right: 2rem;
+    margin-left: -10vw;
+    font-weight: bold;
+    color: white;
+}
+
+.entry-form-input input {
+    border-radius: 5px;
+    width: 30vw;
+}
+
+/* *Invoice */
+
+.invoice-view {
+    /* display: none !important; */
+    margin: 1rem;
+    width: 50vw;
+}
+
+.invoice-bill {
+    margin-bottom: 1rem;
+}
+
+.invoice-bill-design {
+    display: flex;
+    flex-direction: row;
+}
+
+.invoice-card {
+    max-width: 100% !important; 
+}
+
+.modal-view {
+    width: 100% !important;
+}
+
+/* *table design */
+
+.table-design {
+    color: white;
+}
+
+.home_page {
+    width: 100%;
+    height: 100vh;
+}
